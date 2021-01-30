@@ -1,0 +1,48 @@
+
+
+TOKEN TYPE		LEXEME			ATTRIBUTE
+
+FLOAT			float
+ID			a			"a"
+COMMA			,
+ID			b			"b"
+SEMICOLON		;
+LBRACE			{
+INPUT			input
+LROUND			(
+ID			a			"a"
+RROUND			)
+SEMICOLON		;
+INPUT			input
+LROUND			(
+ID			b			"b"
+RROUND			)
+SEMICOLON		;
+IF			if
+LROUND			(
+ID			a			"a"
+RELOP			<			"<"
+ID			b			"b"
+RROUND			)
+OUTPUT			output
+LROUND			(
+ID			a			"a"
+RROUND			)
+SEMICOLON		;
+ELSE 			else
+OUTPUT			output
+LROUND			(
+ID			b			"b"
+RROUND			)
+SEMICOLON		;
+RBRACE			}
+
+Lexical Analyzer to CPL Language
+
+ Maman 12
+
+ Question 1
+
+ Chudnovsky Dmitriy
+
+ 324793900

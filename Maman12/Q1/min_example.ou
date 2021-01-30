@@ -1,0 +1,11 @@
+/* Min - Finding minimum between two numbers */
+float a, b;
+{
+   input (a);
+   input (b);
+
+   if (a < b)
+     output(a);
+   else
+     output(b);
+}

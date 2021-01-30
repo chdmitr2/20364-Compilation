@@ -1,0 +1,98 @@
+
+
+TOKEN TYPE		LEXEME			ATTRIBUTE
+
+FLOAT			float
+ID			a			"a"
+COMMA			,
+ID			b			"b"
+SEMICOLON		;
+INT			int
+ID			i			"i"
+COMMA			,
+ID			j			"j"
+SEMICOLON		;
+LBRACE			{
+ID			a			"a"
+EQUAL			=
+FNUM			3.20000			3.200
+SEMICOLON		;
+ID			j			"j"
+EQUAL			=
+INUM			8			8
+SEMICOLON		;
+ID			i			"i"
+EQUAL			=
+CAST			static_cast<int>		"static_cast<int>"
+ID			a			"a"
+SEMICOLON		;
+OUTPUT			output
+LROUND			(
+ID			i			"i"
+RROUND			)
+SEMICOLON		;
+ID			i			"i"
+EQUAL			=
+CAST			static_cast<int>		"static_cast<int>"
+ID			j			"j"
+SEMICOLON		;
+OUTPUT			output
+LROUND			(
+ID			i			"i"
+RROUND			)
+SEMICOLON		;
+ID			i			"i"
+EQUAL			=
+INUM			16			16
+SEMICOLON		;
+ID			a			"a"
+EQUAL			=
+CAST			static_cast<float>		"static_cast<float>"
+ID			i			"i"
+SEMICOLON		;
+OUTPUT			output
+LROUND			(
+ID			a			"a"
+RROUND			)
+SEMICOLON		;
+ID			b			"b"
+EQUAL			=
+FNUM			17.00000			17.000
+SEMICOLON		;
+ID			a			"a"
+EQUAL			=
+CAST			static_cast<float>		"static_cast<float>"
+LROUND			(
+ID			b			"b"
+RROUND			)
+SEMICOLON		;
+OUTPUT			output
+LROUND			(
+ID			a			"a"
+RROUND			)
+SEMICOLON		;
+ID			b			"b"
+EQUAL			=
+FNUM			18.90000			18.900
+SEMICOLON		;
+ID			a			"a"
+EQUAL			=
+CAST			static_cast<int>		"static_cast<int>"
+ID			b			"b"
+SEMICOLON		;
+OUTPUT			output
+LROUND			(
+ID			a			"a"
+RROUND			)
+SEMICOLON		;
+RBRACE			}
+
+Lexical Analyzer to CPL Language
+
+ Maman 12
+
+ Question 1
+
+ Chudnovsky Dmitriy
+
+ 324793900

@@ -1,0 +1,30 @@
+   /* should print 3  8   16.0   17.0  18.0 (or 19.0 if RTOI rounds up) */    
+float a, b;
+int i, j;
+
+{
+   a = 3.2;
+   j = 8;
+                      $    
+   i = static_cast<int>a;
+   output(i);
+   
+   i = static_cast<int> j;
+   output(i);
+   
+   i = 16;
+   a = static_cast<float>i;
+   output(a);
+   
+   b = 17.0;
+   %
+   a = static_cast<float> (b);
+   
+   output(a);
+   
+   b = 18.9;
+   a = static_cast<int> b;
+   
+   output(a);
+
+}

@@ -1,0 +1,14 @@
+Open Command Prompt.
+
+To create lex.yy.c file type the following command in command prompt:
+
+flex lexAnalyzer.lex
+
+To compile the lex.yy.c file type the following command (uses gcc compiler):
+
+gcc lex.yy.c -o cla.exe
+
+To use the program and create output file <input name file>.tok type the following command :
+
+cla <input name file>.ou
+

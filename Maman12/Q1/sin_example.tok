@@ -1,0 +1,126 @@
+
+
+TOKEN TYPE		LEXEME			ATTRIBUTE
+
+FLOAT			float
+ID			degree			"degree"
+COMMA			,
+ID			cursine			"cursine"
+COMMA			,
+ID			prevsine			"prevsine"
+COMMA			,
+ID			loopnum			"loopnum"
+SEMICOLON		;
+FLOAT			float
+ID			power			"power"
+COMMA			,
+ID			sign			"sign"
+SEMICOLON		;
+LBRACE			{
+INPUT			input
+LROUND			(
+ID			degree			"degree"
+RROUND			)
+SEMICOLON		;
+ID			degree			"degree"
+EQUAL			=
+ID			degree			"degree"
+MULOP			*			"*"
+FNUM			3.14159			3.142
+MULOP			/			"/"
+INUM			180			180
+SEMICOLON		;
+ID			prevsine			"prevsine"
+EQUAL			=
+INUM			0			0
+SEMICOLON		;
+ID			cursine			"cursine"
+EQUAL			=
+ID			degree			"degree"
+SEMICOLON		;
+ID			loopnum			"loopnum"
+EQUAL			=
+INUM			1			1
+SEMICOLON		;
+ID			power			"power"
+EQUAL			=
+ID			degree			"degree"
+SEMICOLON		;
+ID			sign			"sign"
+EQUAL			=
+INUM			1			1
+SEMICOLON		;
+WHILE			while
+LROUND			(
+FNUM			0.00100			0.001
+RELOP			<			"<"
+ID			power			"power"
+AND			&&
+ID			loopnum			"loopnum"
+RELOP			<			"<"
+INUM			200			200
+RROUND			)
+LBRACE			{
+ID			loopnum			"loopnum"
+EQUAL			=
+ID			loopnum			"loopnum"
+ADDOP			+			"+"
+INUM			2			2
+SEMICOLON		;
+ID			power			"power"
+EQUAL			=
+ID			power			"power"
+MULOP			*			"*"
+ID			degree			"degree"
+MULOP			*			"*"
+ID			degree			"degree"
+MULOP			/			"/"
+LROUND			(
+ID			loopnum			"loopnum"
+MULOP			*			"*"
+LROUND			(
+ID			loopnum			"loopnum"
+ADDOP			-			"-"
+INUM			1			1
+RROUND			)
+RROUND			)
+SEMICOLON		;
+ID			prevsine			"prevsine"
+EQUAL			=
+ID			cursine			"cursine"
+SEMICOLON		;
+ID			sign			"sign"
+EQUAL			=
+ID			sign			"sign"
+MULOP			*			"*"
+LROUND			(
+INUM			0			0
+ADDOP			-			"-"
+INUM			1			1
+RROUND			)
+SEMICOLON		;
+ID			cursine			"cursine"
+EQUAL			=
+ID			cursine			"cursine"
+ADDOP			+			"+"
+ID			sign			"sign"
+MULOP			*			"*"
+ID			power			"power"
+SEMICOLON		;
+RBRACE			}
+OUTPUT			output
+LROUND			(
+ID			cursine			"cursine"
+RROUND			)
+SEMICOLON		;
+RBRACE			}
+
+Lexical Analyzer to CPL Language
+
+ Maman 12
+
+ Question 1
+
+ Chudnovsky Dmitriy
+
+ 324793900

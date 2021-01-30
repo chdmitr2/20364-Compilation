@@ -1,0 +1,113 @@
+
+
+TOKEN TYPE		LEXEME			ATTRIBUTE
+
+FLOAT			float
+ID			a			"a"
+COMMA			,
+ID			x			"x"
+COMMA			,
+ID			delta			"delta"
+SEMICOLON		;
+INT			int
+ID			stop			"stop"
+SEMICOLON		;
+LBRACE			{
+INPUT			input
+LROUND			(
+ID			a			"a"
+RROUND			)
+SEMICOLON		;
+ID			x			"x"
+EQUAL			=
+ID			a			"a"
+MULOP			/			"/"
+FNUM			2.00000			2.000
+SEMICOLON		;
+ID			stop			"stop"
+EQUAL			=
+INUM			0			0
+SEMICOLON		;
+WHILE			while
+LROUND			(
+ID			stop			"stop"
+RELOP			==			"=="
+INUM			0			0
+RROUND			)
+LBRACE			{
+ID			x			"x"
+EQUAL			=
+ID			x			"x"
+MULOP			/			"/"
+FNUM			2.00000			2.000
+ADDOP			+			"+"
+ID			a			"a"
+MULOP			/			"/"
+LROUND			(
+FNUM			2.00000			2.000
+MULOP			*			"*"
+ID			x			"x"
+RROUND			)
+SEMICOLON		;
+ID			delta			"delta"
+EQUAL			=
+ID			x			"x"
+MULOP			*			"*"
+ID			x			"x"
+ADDOP			-			"-"
+ID			a			"a"
+SEMICOLON		;
+IF			if
+LROUND			(
+ID			delta			"delta"
+RELOP			<			"<"
+INUM			0			0
+RROUND			)
+LBRACE			{
+ID			delta			"delta"
+EQUAL			=
+INUM			0			0
+ADDOP			-			"-"
+ID			delta			"delta"
+SEMICOLON		;
+RBRACE			}
+ELSE 			else
+LBRACE			{
+RBRACE			}
+IF			if
+LROUND			(
+ID			delta			"delta"
+RELOP			<			"<"
+FNUM			0.00100			0.001
+RROUND			)
+LBRACE			{
+ID			stop			"stop"
+EQUAL			=
+INUM			1			1
+SEMICOLON		;
+RBRACE			}
+ELSE 			else
+LBRACE			{
+RBRACE			}
+RBRACE			}
+OUTPUT			output
+LROUND			(
+ID			a			"a"
+RROUND			)
+SEMICOLON		;
+OUTPUT			output
+LROUND			(
+ID			x			"x"
+RROUND			)
+SEMICOLON		;
+RBRACE			}
+
+Lexical Analyzer to CPL Language
+
+ Maman 12
+
+ Question 1
+
+ Chudnovsky Dmitriy
+
+ 324793900
