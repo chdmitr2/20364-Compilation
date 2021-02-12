@@ -1,0 +1,62 @@
+TOKEN			LEXEME				ATTRIBUTE
+
+
+TITLE			World
+TITLE			Record
+TITLE			World
+TITLE			Record
+NUMBER			[1]			1
+ATTRIBUTE		<time>
+TIME			9.86			run time
+ATTRIBUTE		<athlete>
+LEFTSTRING		"Carl			first name of Country or Athlete
+RIGHTSTRING		Lewis"			last name of Country or Athlete
+ATTRIBUTE		<country>
+LEFTSTRING		"United			first name of Country or Athlete
+RIGHTSTRING		States"			last name of Country or Athlete
+ATTRIBUTE		<date>
+DATE			25  August  1991		date
+NUMBER			[2]			2
+ATTRIBUTE		<time>
+TIME			9.69			run time
+ATTRIBUTE		<athlete>
+LEFTSTRING		"Tyson			first name of Country or Athlete
+RIGHTSTRING		Gay"			last name of Country or Athlete
+ATTRIBUTE		<country>
+LEFTSTRING		"United			first name of Country or Athlete
+RIGHTSTRING		States"			last name of Country or Athlete
+ATTRIBUTE		<date>
+DATE			20  September  2009		date
+NUMBER			[3]			3
+ATTRIBUTE		<time>
+TIME			9.82			run time
+ATTRIBUTE		<athlete>
+LEFTSTRING		"Donovan			first name of Country or Athlete
+RIGHTSTRING		Baily"			last name of Country or Athlete
+ATTRIBUTE		<country>
+LEFTSTRING		"Canada			first name of Country or Athlete
+RIGHTSTRING		"			last name of Country or Athlete
+ATTRIBUTE		<date>
+DATE			27  July  1996		date
+NUMBER			[4]			4
+ATTRIBUTE		<time>
+TIME			9.85			run time
+ATTRIBUTE		<athlete>
+LEFTSTRING		"Usain			first name of Country or Athlete
+RIGHTSTRING		Bolt"			last name of Country or Athlete
+ATTRIBUTE		<country>
+LEFTSTRING		"Jamaica			first name of Country or Athlete
+RIGHTSTRING		"			last name of Country or Athlete
+ATTRIBUTE		<date>
+DATE			16  August  2009		date
+NUMBER			[5]			5
+ATTRIBUTE		<time>
+TIME			9.79			run time
+ATTRIBUTE		<athlete>
+LEFTSTRING		"Maurice			first name of Country or Athlete
+RIGHTSTRING		Greene"			last name of Country or Athlete
+ATTRIBUTE		<country>
+LEFTSTRING		"United			first name of Country or Athlete
+RIGHTSTRING		States"			last name of Country or Athlete
+ATTRIBUTE		<date>
+DATE			16  June  1999		date

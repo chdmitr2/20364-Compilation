@@ -1,0 +1,17 @@
+Open Command Prompt.
+
+To create lex.yy.c file type the following command in command prompt:
+
+flex bestAthletes.lex
+
+To compile the lex.yy.c file type the following command (uses gcc compiler):
+
+gcc lex.yy.c -o athlete.exe
+
+To use the program and create output text file type the following command :
+
+athlete input.txt > output.txt
+
+To use the program and display output on screen type the following command :
+
+athlete input.txt 
