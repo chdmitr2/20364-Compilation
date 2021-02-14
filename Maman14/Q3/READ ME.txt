@@ -1,0 +1,18 @@
+Open Command Prompt.
+
+To create parse.tab.c file type the following command in command prompt:
+
+bison -d  parse.y
+
+To create lex.yy.c file type the following command in command prompt:
+
+flex lexer.lex
+
+To compile the lex.yy.c and parse.tab.c files type the following command (uses gcc compiler):
+
+gcc lex.yy.c parse.tab.c -o tree.exe
+
+To run program and calculate value of tree type the following command :
+
+tree <input name file>.txt
+
