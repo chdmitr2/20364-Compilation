@@ -1,0 +1,16 @@
+IINP	cond		
+IEQL	cond	t4	1
+JMPZ	4	t4	
+IPRT	1		
+JUMP	6		
+IEQL	cond	t2	2
+JMPZ	8	t2	
+IPRT	2		
+JUMP	10		
+IEQL	cond	t3	3
+JMPZ	12	t3	
+IPRT	3		
+JUMP	14		
+JUMP	16		
+IPRT	0		
+HALT			

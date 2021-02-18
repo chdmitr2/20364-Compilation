@@ -1,0 +1,39 @@
+/* test implicit/explicit type conversions */
+
+  i, j : int;
+ a, b : float;
+
+{
+   input (a);
+  input (i);
+
+ 
+
+   if (a >= i)  {
+
+       b = a - i;
+       output(b);
+   }
+   else {
+       output(i * a);
+   }
+
+
+
+   i = static_cast<int>(3.0 + 5.8);
+   output (i);
+
+   i = static_cast<int>(3 + 5); /* this is legal */
+   output(i);
+
+ 
+
+   a = static_cast<float>(3 + 5);
+   output(a);
+
+   a = static_cast<float> (3.0 + 5.0); /* this is legal*/
+   output(a);
+
+    i = static_cast<float>(17); /* this is an error: cannot assign float value to int variable */
+
+}

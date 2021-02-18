@@ -1,0 +1,20 @@
+/* square root of a given number */
+
+    a, x, delta : float ;
+    stop : int ;
+
+{
+      input (a);
+      x = a / 2.0;
+      stop = 0;
+
+      while(stop == 0) {
+         x = x / 2.0 + a / ( 2.0 * x );
+         delta =  x * x - a;
+
+         if(delta < 0)  { delta = 0 - delta; } else { }
+         if (delta < 0.0001)  { stop = 1; } else { }
+       }
+       output(a);
+       output(x);
+}

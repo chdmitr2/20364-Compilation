@@ -1,0 +1,22 @@
+{   /* should print 7788 */
+
+   if (10 > 2 || 10 > 100)
+       output(7);
+   else
+       output(8);
+
+   if (4 < 2 || 13 >= 12)
+       output(7);
+   else
+       output(8);
+
+  if (9 > 0 && 4 < 2 || 12 >= 20)
+         output(7);
+  else
+         output(8);
+
+  if (! (12 > 9))
+         output(7);
+  else
+         output(8);
+}

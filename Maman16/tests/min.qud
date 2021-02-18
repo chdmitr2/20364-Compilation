@@ -1,0 +1,8 @@
+RINP	a		
+RINP	b		
+RLSS	t1	a	b
+JMPZ	7	t1	
+RPRT	a		
+JUMP	8		
+RPRT	b		
+HALT			

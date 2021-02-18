@@ -1,0 +1,26 @@
+IASN	b	0	
+IEQL	t1	b	0
+JMPZ	13	t1	
+IINP	a		
+IGRT	t2	a	0
+JMPZ	12	t2	
+IGRT	t3	a	1000
+ISUB	t3	1	t3
+JMPZ	12	t3	
+IASN	b	1	
+JUMP	12		
+JUMP	2		
+IASN	ten	1	
+IASN	b	0	
+IGRT	t4	a	0
+JMPZ	25	t4	
+IDIV	t5	a	2
+IMLT	t6	t5	2
+ISUB	temp	a	t6
+IMLT	t8	temp	ten
+IADD	b	b	t8
+IMLT	ten	ten	10
+IDIV	a	a	2
+JUMP	15		
+IPRT	b		
+HALT			

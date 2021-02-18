@@ -1,0 +1,31 @@
+RINP	in		
+RMLT	t1	in	3.14159
+ITOR	t2	180	
+RDIV	in	t1	t2
+ITOR	prevsine	0	
+RASN	cursine	in	
+ITOR	loopnum	1	
+RASN	power	in	
+ITOR	sign	1	
+RLSS	t4	0.0001	power
+JMPZ	30	t4	
+ITOR	t5	200	
+RLSS	t6	loopnum	t5
+JMPZ	30	t6	
+ITOR	t7	2	
+RADD	loopnum	loopnum	t7
+RMLT	t9	power	in
+RMLT	t10	t9	in
+ITOR	t11	1	
+RSUB	t12	loopnum	t11
+RMLT	t13	loopnum	t12
+RDIV	power	t10	t13
+RASN	prevsine	cursine	
+ISUB	t15	0	1
+ITOR	t16	t15	
+RMLT	sign	sign	t16
+RMLT	t18	sign	power
+RADD	cursine	cursine	t18
+JUMP	10		
+RPRT	cursine		
+HALT			

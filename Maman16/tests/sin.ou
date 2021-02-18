@@ -1,0 +1,26 @@
+/*********************************************************/
+/*  This program calculates the sine value               */
+/*  of the number entered (in degrees)                   */
+/*********************************************************/
+
+  in, cursine, prevsine, loopnum :  float;
+  power, sign : float;
+
+{
+  input (in);
+  in = in * 3.14159/180;
+  prevsine = 0;
+  cursine = in;
+  loopnum = 1;
+  power = in;
+  sign = 1;
+  while (0.0001 < power && loopnum < 200) {
+   loopnum = loopnum + 2;
+   power = power * in * in / (loopnum * ( loopnum - 1 ));
+   prevsine = cursine;
+   sign = sign * ( 0 - 1 );
+   cursine = cursine + sign * power;
+  }
+  output(cursine);
+
+}

@@ -1,0 +1,16 @@
+RASN	a	3.2	
+IASN	j	8	
+RTOI	i	a	
+IPRT	i		
+IASN	i	j	
+IPRT	i		
+IASN	i	16	
+ITOR	a	i	
+RPRT	a		
+RASN	b	17.0	
+RASN	a	b	
+RPRT	a		
+RASN	b	18.9	
+RTOI	a	b	
+RPRT	a		
+HALT			

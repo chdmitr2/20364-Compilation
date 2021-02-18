@@ -1,0 +1,17 @@
+/* Finding minimum between two numbers of type float */
+
+ a, b : float ;
+ 
+{
+   input ( a );
+
+   input ( b );
+
+   if ( a < b )  
+
+             output ( a );
+
+   else
+
+             output ( b );
+ }

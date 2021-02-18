@@ -1,0 +1,25 @@
+RINP	a		
+RDIV	x	a	2.0
+IASN	stop	0	
+IEQL	t2	stop	0
+JMPZ	23	t2	
+RDIV	t3	x	2.0
+RMLT	t4	2.0	x
+RDIV	t5	a	t4
+RADD	x	t3	t5
+RMLT	t7	x	x
+RSUB	delta	t7	a
+ITOR	t9	0	
+RLSS	t10	delta	t9
+JMPZ	18	t10	
+ITOR	t11	0	
+RSUB	delta	t11	delta
+JUMP	18		
+RLSS	t13	delta	0.0001
+JMPZ	22	t13	
+IASN	stop	1	
+JUMP	22		
+JUMP	4		
+RPRT	a		
+RPRT	x		
+HALT			

@@ -1,0 +1,16 @@
+
+  first , count, second : int;
+ 
+{
+     input (second);
+     input (first);
+     
+     count = 0;
+
+     while (first >= second) {
+       first = first-second;
+       count = count+1;
+     }
+
+     output(count);
+}

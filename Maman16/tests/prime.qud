@@ -1,0 +1,27 @@
+IPRT	2		
+IPRT	3		
+IASN	a	5	
+IGRT	t1	a	38
+ISUB	t1	1	t1
+JMPZ	27	t1	
+IASN	b	2	
+IASN	stop	1	
+IMLT	t2	stop	a
+IDIV	t3	t2	2
+ILSS	t4	b	t3
+JMPZ	21	t4	
+IDIV	t5	a	b
+IMLT	t6	t5	b
+IEQL	t7	t6	a
+JMPZ	19	t7	
+IASN	stop	0	
+JUMP	19		
+IADD	b	b	1
+JUMP	9		
+IEQL	t9	stop	1
+JMPZ	25	t9	
+IPRT	a		
+JUMP	25		
+IADD	a	a	2
+JUMP	4		
+HALT			

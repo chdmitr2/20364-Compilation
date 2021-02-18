@@ -1,0 +1,11 @@
+IINP	second		
+IINP	first		
+IASN	count	0	
+ILSS	t1	first	second
+ISUB	t1	1	t1
+JMPZ	10	t1	
+ISUB	first	first	second
+IADD	count	count	1
+JUMP	4		
+IPRT	count		
+HALT			
