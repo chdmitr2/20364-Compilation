@@ -1,0 +1,42 @@
+Open Command Prompt of Windows.
+
+Enter to directory of project : cd Desktop\maman16
+
+To create lex.yy.c file type the following command in command prompt:
+
+flex lexer.lex
+
+To create parse.tab.c file type the following command in command prompt:
+
+bison -d  parser.y
+
+To compile the lex.yy.c , parse.tab.c, parse.tab.h files type the following command (uses gcc compiler):
+
+gcc lex.yy.c parser.tab.c cpq.c gen.c symtab.c -o cpq.exe
+
+To run program and translate to file.qud type the following commands :
+
+cpq tests/<input name file>.ou ,like:
+
+cpq tests/binary.ou
+
+cpq tests/andor.ou
+
+cpq tests/min.ou
+
+cpq tests/fibo.ou
+
+cpq tests/cnv.ou
+
+cpq tests/div.ou
+
+cpq tests/sw.ou
+
+cpq tests/sqrt.ou
+
+cpq tests/sin.ou
+
+cpq tests/prime.ou
+
+cpq tests/cast.ou
+
